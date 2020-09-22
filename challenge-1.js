@@ -43,3 +43,74 @@
 //   }
 //   document.write("<br>");
 // }
+
+//(1)Declaring a function
+//A set of instruction, that can be regrouped for reusability;
+// function sayHello(){
+//   console.log("Hello");
+// }
+// //Calling or Invoking the function
+// sayHello();
+// //(2)Function with parameter
+// function goodBye(name){
+//   console.log("Hello "+name);
+// }
+
+// goodBye("Anson");
+// goodBye("Wan");
+// goodBye("Siva");
+
+//(3) Function with result (calculation, comparison, transform...)
+// function sum(a,b){
+//   return a+b;
+// }
+//   console.log(sum(3,2));
+//   console.log(sum(123,59));
+
+//Create a function that will return the average of three numbers
+// function avg(a,b,c){
+//   return (a+b+c)/3
+// }
+//   console.log(avg(5,8,2));
+
+//Create a function that will return more than 1 answer
+// function dimAndVol(a,b,c){
+//   return (a*b, a*b*c)
+// }
+//   console.log(dimAndVol(6,8,2));
+
+//Create a function that will return more than 1 answer
+// function dimAndVol(a,b,c){
+//   return [a*b, a*b*c];
+// }
+//   console.log(dimAndVol(6,8,2));
+
+//Create a function that will return min, max, avg
+function minMaxAvg(a,b,c){
+var min;
+var max;
+var avg = (a+b+c)/3;
+
+if (a > b && a > c){
+  max = a;
+  }
+else if (b > a && b > c){
+  max = b;
+  }
+else{
+  max = c;
+  }
+  
+ if (a < b && a < c){
+  min = a;
+  }
+else if (b < a && b < c){
+  min = b;
+  }
+else{
+  min = c;
+  }
+  return [min,max,avg]
+}
+console.log(minMaxAvg(10,13,13));
+
